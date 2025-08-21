@@ -25,6 +25,6 @@ By leveraging SQL window functions and time-series aggregation, it uncovers long
 - Key columns:
 - order_date – transaction date
 - sales_amount – total sales
-- rice – price per item
+- price – price per item
 
 Aggregation: Data is summarized by year for cumulative and moving analysis.
