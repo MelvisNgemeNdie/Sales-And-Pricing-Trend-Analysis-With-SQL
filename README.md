@@ -88,7 +88,7 @@ ORDER BY order_year;
 - Prices peaked around 2010–2011, with averages above 3,000.
 - From 2012 onward, prices dropped sharply (down to 23 by 2014).
 - The moving average smooths out volatility, clearly showing a steady downward trend across the years.
-### Skills & Technologies
+### Skills Demonstrated
 - **Data Aggregation** → Using SUM() and AVG() to generate KPIs like yearly sales and average prices.
 - **Time-Based Analysis** → Grouping by DATE_PART('year', order_date) to track trends over time.
 - **Window Functions**
