@@ -64,7 +64,7 @@ FROM yearly_avg_price
 ORDER BY order_year;
 ```
 ### Summary Tables Of Analysis Results & Insights
-#### 1.Table For Running Sales Totals
+#### 1. Table For Running Sales Totals
 | order_year | total_sales | running_sales_totals |
 |------------|-------------|-----------------------|
 | 2010       | 43,419      | 43,419                |
