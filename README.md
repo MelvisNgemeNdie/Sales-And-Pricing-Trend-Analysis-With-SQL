@@ -38,6 +38,30 @@ SELECT
     SUM(total_sales) OVER (ORDER BY order_year) AS running_sales_total
 FROM yearly_sales
 ORDER BY order_year;
+```
+#### 2. Moving Average Of Prices (3-Year Window)
+```sql
+WITH yearly_avg_price AS (
+    SELECT 
+        DATE_PART('year', order_date) AS order_year,
+        ROUND(AVG(price), 2) AS avg_price
+    FROM public."gold.fact_sales"
+    WHERE order_date IS NOT NULL
+    GROUP BY DATE_PART('year', order_date)
+)
+
+SELECT
+    order_year,
+    avg_price,
+    ROUND(
+        AVG(avg_price) OVER (
+            ORDER BY order_year 
+            ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+        ), 2
+    ) AS moving_avg_price_3yr
+FROM yearly_avg_price
+ORDER BY order_year;
+
 
 
 ### Skills & Technologies
