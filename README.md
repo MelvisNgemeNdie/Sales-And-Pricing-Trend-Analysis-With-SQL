@@ -19,7 +19,7 @@ Key columns used:
 - order_date → date of order.
 - sales_amount → revenue generated.
 - price → unit price of items sold.
--customer_key → customer identifier.
+- customer_key → customer identifier.
 ### SQL Queries
 #### 1. Running Sales Total Over Time
 ```sql
