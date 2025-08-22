@@ -20,6 +20,26 @@ Key columns used:
 - sales_amount → revenue generated.
 - price → unit price of items sold.
 -customer_key → customer identifier.
+### SQL Queries
+#### 1. Running Sales Total Over Time
+```sql
+WITH yearly_sales AS (
+    SELECT 
+        DATE_PART('year', order_date) AS order_year,
+        SUM(sales_amount) AS total_sales
+    FROM public."gold.fact_sales"
+    WHERE order_date IS NOT NULL
+    GROUP BY DATE_PART('year', order_date)
+)
+
+SELECT
+    order_year,
+    total_sales,
+    SUM(total_sales) OVER (ORDER BY order_year) AS running_sales_total
+FROM yearly_sales
+ORDER BY order_year;
+
+
 ### Skills & Technologies
 - **SQL (PostgreSQL)**:  Aggregations, CTEs, and window functions.
 - **Data Transformation**: Cleaning and grouping data by year.
