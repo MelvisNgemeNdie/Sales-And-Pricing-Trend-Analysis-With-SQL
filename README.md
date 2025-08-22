@@ -39,6 +39,16 @@ SELECT
 FROM yearly_sales
 ORDER BY order_year;
 ```
+#### Summary Table For Running Sales Totals & Insights
+
+| order_year | total_sales | running_sales_totals |
+|------------|-------------|-----------------------|
+| 2010       | 43,419      | 43,419                |
+| 2011       | 7,075,088   | 7,118,507             |
+| 2012       | 5,842,231   | 12,960,738            |
+| 2013       | 16,344,878  | 29,305,616            |
+| 2014       | 45,642      | 29,351,258            |
+
 #### 2. Moving Average Of Prices (3-Year Window)
 ```sql
 WITH yearly_avg_price AS (
