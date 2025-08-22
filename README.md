@@ -63,9 +63,8 @@ SELECT
 FROM yearly_avg_price
 ORDER BY order_year;
 ```
-
 ### Analysis Results
-#### 1.Summary Table For Running Sales Totals & Insights
+#### 1. Summary Table For Running Sales Totals & Insights
 | order_year | total_sales | running_sales_totals |
 |------------|-------------|-----------------------|
 | 2010       | 43,419      | 43,419                |
@@ -78,7 +77,6 @@ ORDER BY order_year;
 - By 2013, cumulative sales surpassed 29M, highlighting a rapid expansion phase.
 - 2014 shows a sudden drop in yearly sales (~45k), which may indicate data issues, seasonality, or a significant business slowdown.
 - Despite the dip in 2014, the cumulative trend remains strongly upward, reflecting sustained growth across the earlier years.
-
 #### 2. Summary Table Of Moving Price Averages & Insights
 | Year | Avg Price | Moving Avg Price |
 |------|-----------|------------------|
@@ -90,11 +88,6 @@ ORDER BY order_year;
 - Prices peaked around 2010–2011, with averages above 3,000.
 - From 2012 onward, prices dropped sharply (down to 23 by 2014).
 - The moving average smooths out volatility, clearly showing a steady downward trend across the years.
-
-
-
-
-
 ### Skills & Technologies
 - **SQL (PostgreSQL)**:  Aggregations, CTEs, and window functions.
 - **Data Transformation**: Cleaning and grouping data by year.
