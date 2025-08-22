@@ -6,7 +6,7 @@ This project explores sales and pricing trends over time using cumulative and mo
 The goal of the project is to uncovers long-term growth patterns, price trends, and actionable insights for business strategy. By leveraging on SQL window functions and time-series aggregation, two key analyses are performed:
 ##### Running Sales Total (Cumulative Sales Over Time)
 - Tracks the growth of sales year by year.
-- - Uses window functions to compute cumulative totals.
+- Uses window functions to compute cumulative totals.
 ##### Moving Average of Prices
 - Smooths out fluctuations in yearly average prices.
 - Uses rolling 3-year moving averages to reveal long-term pricing trends.
