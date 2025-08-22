@@ -28,18 +28,13 @@ These analyses highlight skills in SQL aggregation, window functions, and time-b
 (Optional) BI Tools (Tableau, Power BI, Excel) – Visualizing the results.
 
 ### Dataset
-
 The project uses a fact table:
 public."gold.fact_sales"
 
 Key columns used:
-
-order_date → date of order.
-
-sales_amount → revenue generated.
-
-price → unit price of items sold.
-
+- order_date → date of order.
+- sales_amount → revenue generated.
+- price → unit price of items sold.
 customer_key → customer identifier.
 - Source: public.gold.fact_sales table
 - Key columns:
