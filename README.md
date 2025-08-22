@@ -17,25 +17,14 @@ This project demonstrates the use of advanced SQL techniques to analyze sales an
 - Smooths out fluctuations in yearly average prices.
 - Uses rolling 3-year moving averages to reveal long-term pricing trends.
 These analyses highlight skills in SQL aggregation, window functions, and time-based analytics, which are essential for data-driven decision-making in business.
-
-
 ### Dataset
 The project uses a **fact table**:
 public."gold.fact_sales"
-
 Key columns used:
 - order_date → date of order.
 - sales_amount → revenue generated.
 - price → unit price of items sold.
-customer_key → customer identifier.
-- Source: public.gold.fact_sales table
-- Key columns:
-- order_date – transaction date
-- sales_amount – total sales
-- price – price per item
-
-
-
+-customer_key → customer identifier.
 ### Skills & Technologies
 - **SQL (PostgreSQL)**:  Aggregations, CTEs, and window functions.
 - **Data Transformation**: Cleaning and grouping data by year.
