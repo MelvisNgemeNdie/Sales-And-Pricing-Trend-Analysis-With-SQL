@@ -71,6 +71,17 @@ SELECT
     ) AS moving_avg_price_3yr
 FROM yearly_avg_price
 ORDER BY order_year;
+```
+#### Summary Table Of Moving Price Averages
+| Year | Avg Price | Moving Avg Price |
+|------|-----------|------------------|
+| 2010 | 3101      | 3101             |
+| 2011 | 3193      | 3147             |
+| 2012 | 1720      | 2671             |
+| 2013 | 310       | 2081             |
+| 2014 | 23        | 1669             |
+
+### 
 
 
 
