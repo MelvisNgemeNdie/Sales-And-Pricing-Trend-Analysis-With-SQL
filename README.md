@@ -90,9 +90,9 @@ ORDER BY order_year;
 - The moving average smooths out volatility, clearly showing a steady downward trend across the years.
 ### Recommendation & Next Moves
 Recommendations and next moves using color-coded emojis for priority levels.
-- 🔴 High: Investigate 2014 anomalies, Review pricing strategy
-- 🟡 Medium: Maintain growth momentum, Enhance data quality & trend monitoring
-- 🟢 Low: Strategic planning & forecasting
+- 🔴 **High**: Investigate 2014 anomalies, Review pricing strategy
+- 🟡 **Medium**: Maintain growth momentum, Enhance data quality & trend monitoring
+- 🟢 **Low**: Strategic planning & forecasting
 
 ### Skills Demonstrated
 - **Data Aggregation** → Using SUM() and AVG() to generate KPIs like yearly sales and average prices.
