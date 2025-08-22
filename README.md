@@ -39,15 +39,6 @@ SELECT
 FROM yearly_sales
 ORDER BY order_year;
 ```
-#### Summary Table For Running Sales Totals & Insights
-
-| order_year | total_sales | running_sales_totals |
-|------------|-------------|-----------------------|
-| 2010       | 43,419      | 43,419                |
-| 2011       | 7,075,088   | 7,118,507             |
-| 2012       | 5,842,231   | 12,960,738            |
-| 2013       | 16,344,878  | 29,305,616            |
-| 2014       | 45,642      | 29,351,258            |
 
 #### 2. Moving Average Of Prices (3-Year Window)
 ```sql
@@ -72,7 +63,23 @@ SELECT
 FROM yearly_avg_price
 ORDER BY order_year;
 ```
-#### Summary Table Of Moving Price Averages & Insights
+
+### Analysis Results
+#### 1.Summary Table For Running Sales Totals & Insights
+| order_year | total_sales | running_sales_totals |
+|------------|-------------|-----------------------|
+| 2010       | 43,419      | 43,419                |
+| 2011       | 7,075,088   | 7,118,507             |
+| 2012       | 5,842,231   | 12,960,738            |
+| 2013       | 16,344,878  | 29,305,616            |
+| 2014       | 45,642      | 29,351,258            |
+- 2010 had very low sales (~43k), suggesting either a partial year of operations or limited market penetration.
+- 2011–2013 show strong year-over-year growth, with sales crossing 16M in 2013 alone.
+- By 2013, cumulative sales surpassed 29M, highlighting a rapid expansion phase.
+- 2014 shows a sudden drop in yearly sales (~45k), which may indicate data issues, seasonality, or a significant business slowdown.
+- Despite the dip in 2014, the cumulative trend remains strongly upward, reflecting sustained growth across the earlier years.
+
+#### 2. Summary Table Of Moving Price Averages & Insights
 | Year | Avg Price | Moving Avg Price |
 |------|-----------|------------------|
 | 2010 | 3101      | 3101             |
@@ -84,7 +91,7 @@ ORDER BY order_year;
 - From 2012 onward, prices dropped sharply (down to 23 by 2014).
 - The moving average smooths out volatility, clearly showing a steady downward trend across the years.
 
-### 
+
 
 
 
