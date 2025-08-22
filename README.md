@@ -99,8 +99,8 @@ ORDER BY order_year;
 - **Data Aggregation** → Using SUM() and AVG() to generate KPIs like yearly sales and average prices.
 - **Time-Based Analysis** → Grouping by DATE_PART('year', order_date) to track trends over time.
 - **Window Functions**
- - \'SUM()' OVER (ORDER BY …) for cumulative totals.
- - \'AVG()' OVER (ROWS BETWEEN …) for rolling averages.
+  - 'SUM() OVER (ORDER BY …)' for cumulative totals.
+  - 'AVG() OVER (ROWS BETWEEN …)' for rolling averages.
 - **Common Table Expressions (CTEs)** → Structuring queries cleanly with WITH for modular, reusable logic.
 - **Data Cleaning & Filtering** → Ensuring valid analysis by excluding NULL dates (WHERE order_date IS NOT NULL).
 
