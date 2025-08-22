@@ -103,6 +103,9 @@ Recommendations and next moves using color-coded emojis for priority levels.
 - **Common Table Expressions (CTEs)** → Structuring queries cleanly with WITH for modular, reusable logic.
 - **Data Cleaning & Filtering** → Ensuring valid analysis by excluding NULL dates (WHERE order_date IS NOT NULL).
 ### Tools & Technologies
+- SQL (PostgreSQL)
+- Excel / CSV (for data handling)
+- GitHub (Version Control & Portfolio Presentation)
 
 
 
