@@ -89,20 +89,11 @@ ORDER BY order_year;
 - From 2012 onward, prices dropped sharply (down to 23 by 2014).
 - The moving average smooths out volatility, clearly showing a steady downward trend across the years.
 ### Skills & Technologies
-- **SQL (PostgreSQL)**:  Aggregations, CTEs, and window functions.
-- **Data Transformation**: Cleaning and grouping data by year.
-- **Analytical Techniques**: Running totals, moving averages, and KPI creation.
-- **GitHub**: Version control and portfolio documentation.
-- **BI Tools-Tableau**: Visualizing the results.
-
- ### Skills & Technologies
 - **Data Aggregation** → Using SUM() and AVG() to generate KPIs like yearly sales and average prices.
 - **Time-Based Analysis** → Grouping by DATE_PART('year', order_date) to track trends over time.
 - **Window Functions**
-
   - SUM(total_sales) OVER (ORDER BY …) for cumulative totals.
   -  AVG() OVER (ROWS BETWEEN …) for rolling averages.
-
 - **Common Table Expressions (CTEs)** → Structuring queries cleanly with WITH for modular, reusable logic.
 - **Data Cleaning & Filtering** → Ensuring valid analysis by excluding NULL dates (WHERE order_date IS NOT NULL).
 
