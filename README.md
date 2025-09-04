@@ -1,8 +1,12 @@
 
 ## Sales & Pricing Trend Analysis with SQL
 ### Project Overview
-This project explores sales and pricing trends over time using cumulative and moving calculations. 
-### Objective
+This project explores sales and pricing trends over time using cumulative and moving calculations.
+
+---
+
+
+### The Problem
 The goal of the project is to uncovers long-term growth patterns, price trends, and actionable insights for business strategy. By leveraging on SQL window functions and time-series aggregation, two key analyses are performed:
 ##### Running Sales Total (Cumulative Sales Over Time)
 - Tracks the growth of sales year by year.
@@ -11,6 +15,9 @@ The goal of the project is to uncovers long-term growth patterns, price trends, 
 - Smooths out fluctuations in yearly average prices.
 - Uses rolling 3-year moving averages to reveal long-term pricing trends.
 These analyses highlight skills in SQL aggregation, window functions, and time-based analytics, which are essential for data-driven decision-making in business.
+
+---
+
 ### Dataset
 The project uses a **fact table**:
 public."gold.fact_sales".
@@ -20,6 +27,9 @@ Key columns used:
 - sales_amount → revenue generated.
 - price → unit price of items sold.
 - customer_key → customer identifier.
+
+---
+
 ### SQL Queries
 #### 1. Running Sales Total Over Time
 ```sql
@@ -63,6 +73,10 @@ SELECT
 FROM yearly_avg_price
 ORDER BY order_year;
 ```
+
+---
+
+
 ### Summary Tables Of Analysis Results & Insights
 #### 1. Table For Running Sales Totals
 | order_year | total_sales | running_sales_totals |
@@ -88,11 +102,20 @@ ORDER BY order_year;
 - Prices peaked around 2010–2011, with averages above 3,000.
 - From 2012 onward, prices dropped sharply (down to 23 by 2014).
 - The moving average smooths out volatility, clearly showing a steady downward trend across the years.
+
+
+---
+
+
 ### Recommendation & Next Moves
 Recommendations and next moves using color-coded emojis for priority levels.
-- 🔴 **High**: Investigate 2014 anomalies, Review pricing strategy
-- 🟡 **Medium**: Maintain growth momentum, Enhance data quality & trend monitoring
-- 🟢 **Low**: Strategic planning & forecasting
+- 🔴 **High**: Investigate 2014 anomalies, Review pricing strategy.
+- 🟡 **Medium**: Maintain growth momentum, Enhance data quality & trend monitoring.
+- 🟢 **Low**: Strategic planning & forecasting.
+
+
+---
+
 
 ### Skills Demonstrated
 - **Data Aggregation** → Using SUM() and AVG() to generate KPIs like yearly sales and average prices.
@@ -102,10 +125,17 @@ Recommendations and next moves using color-coded emojis for priority levels.
   -  AVG() OVER (ROWS BETWEEN …) for rolling averages.
 - **Common Table Expressions (CTEs)** → Structuring queries cleanly with WITH for modular, reusable logic.
 - **Data Cleaning & Filtering** → Ensuring valid analysis by excluding NULL dates (WHERE order_date IS NOT NULL).
+
+
+---
+
+
 ### Tools & Technologies
-- SQL (PostgreSQL)
-- Excel / CSV (for data handling)
-- GitHub (Version Control & Portfolio Presentation)
+- SQL (PostgreSQL).
+- Excel / CSV (for data handling).
+- GitHub (Version Control & Portfolio Presentation).
+  
+--- 
 
 
 
