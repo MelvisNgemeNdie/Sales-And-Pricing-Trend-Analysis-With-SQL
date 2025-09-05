@@ -1,5 +1,5 @@
 
-## Sales & Pricing Trend Analysis with SQL
+## Sales And Pricing Trend Analysis with SQL
 ### Project Overview
 This project explores sales and pricing trends over time using cumulative and moving calculations.
 
