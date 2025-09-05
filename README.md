@@ -125,5 +125,13 @@ Recommendations and next moves using color-coded emojis for priority levels.
   
 --- 
 
+### Key Takeaway
+- **Sales Growth:** Cumulative sales surpassed **$29M by 2013**, showing strong expansion between 2011–2013.  
+- **2014 Anomaly:** Yearly sales dropped to just **$45K**, requiring further investigation into data issues or market factors.  
+- **Pricing Trends:** Average prices fell sharply from **$3,000+ (2010–2011)** to **$23 (2014)**, with a consistent downward trend confirmed by the 3-year moving average.  
+- **Insight:** The company must review its **pricing strategy**, address **data quality issues**, and strengthen **forecasting and monitoring systems** to sustain growth.  
+
+---
+
 
 
